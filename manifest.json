@@ -1,0 +1,9 @@
+{
+  "name":"Al-Quran — Read, Search & Listen",
+  "short_name":"Al-Quran",
+  "start_url":"./",
+  "display":"standalone",
+  "background_color":"#f6faf9",
+  "theme_color":"#0f766e",
+  "description":"A simple Quran reader with Surahs, translation, bookmarks and audio."
+}
