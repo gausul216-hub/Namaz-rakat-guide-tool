@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0f766e" />
+  <meta name="description" content="Full Quran web app with Surahs, Juz, search, bookmarks, translation and audio." />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Al-Quran — Read, Search & Listen</title>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="brand-icon">☪</span><div><strong>Al-Quran</strong><small>Read • Search • Listen</small></div></div>
+    <button id="themeBtn" class="icon-btn" aria-label="Toggle theme">☾</button>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</p>
+      <h1>The Noble Quran</h1>
+      <p>Read the Quran, explore all 114 Surahs, search verses, save bookmarks and listen to recitation.</p>
+      <div class="search-wrap"><span>⌕</span><input id="searchInput" type="search" placeholder="Search Surah or verse…" autocomplete="off" /></div>
+    </section>
+
+    <section class="tabs" aria-label="Quran navigation">
+      <button class="tab active" data-view="surahs">Surahs</button>
+      <button class="tab" data-view="juz">Juz</button>
+      <button class="tab" data-view="bookmarks">Bookmarks</button>
+    </section>
+
+    <section id="surahView" class="view"></section>
+    <section id="readerView" class="view hidden"></section>
+  </main>
+
+  <div id="loading" class="loading hidden"><div class="spinner"></div><span>Loading Quran…</span></div>
+  <div id="toast" class="toast" role="status"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
